@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="send-quote ">
+        <div class="send-quotes flex flex-col items-center w-full">
+
+            <div id="bot" class="chatbot w-full">
+                <div class="chatbot-header">
+                    <h4>Chatbot</h4>
+                    <p id="chatDate"></p>
+                </div>
+                <div class="chatbot-body">
+                    <div id="botscreen" class="botscreen flex flex-col"></div>
+                    <div class="botinput w-full flex justify-between items-center">
+                        <input class="w-full" type="text" id="bottext" name="bottext" placeholder="write a message...">
+                        <span id="sendtext" class="sendText text-center"><i
+                                class="fa-regular fa-paper-plane"></i></span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <span id="botOpenBtn" class="send-quoteBtn w-full flex justify-center items-center"><i
+                    class="fa-regular fa-message"></i></span>
+
+
+        </div>
+    </div>
+
+    <div class="navbar-top bg-secondary ">
+        <div class="container flex items-center w-full">
+            <div class="w-half flex items-center">
+                <a class="flex items-center" href="mailto:test@gmail.com"> <span><i
+                            class="fa-regular fa-envelope"></i></span> testtest@gmail.com</a>
+                <p class="text-white"><span><i class="fa-solid fa-truck-ramp-box"></i></span> Free express shipping on
+                    orders $570+
+                </p>
+            </div>
+            <div class="w-half">
+                <div class="header-social-section flex items-center">
+                    <a class="text-white" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="text-white" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="text-white" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="text-white" href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="visible-overlay"></div>
+        <div class="signIn-popup flex flex-col">
+            <div class="sigup-header flex justify-between items-center">
+                <h3>Log In</h3>
+                <span id="signup-popup-close"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <form action="" class="flex flex-col">
+                <div class="flex flex-col">
+                    <label for="email"> Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your mail" required>
+                </div>
+                <div class="flex flex-col">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit"> Submit</button>
+            </form>
+            <div class="login-footer">
+                <p class="para">Don't have any account? <a href="/signup.html"> Sign Up </a></p>
+            </div>
+        </div>
+
+        <!-- --------------------------- MAIN HEADER ------------------- -->
+
+        <div class="navbar w-full flex container items-center">
+            <div class="logo-section">
+                <a href="/"><img src="/media/light-logo.png" alt="built-cart-logo"></a>
+            </div>
+            <div class="menubar">
+                <nav class="text-center">
+                    <ul class="flex gap">
+                        <li><a href="#">Trade & Professional</a></li>
+                        <li><a href="#">Self-Builders</a></li>
+                        <li><a href="#">DIY & Home</a></li>
+                        <li><a href="#">Merchant Partners</a></li>
+                        <li><a href="#">Trade Account</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="signup flex items-center">
+                <a class="anchore-contact flex items-center" href="tel:+12345678901">
+                    <div class="flex items-center contact-icon justify-center"><i class="fa-solid fa-phone"></i></div>
+                    <div class="flex flex-col"><span class="nav-contact">Contact us</span><span
+                            class="nav-cont-para">+12345678901</span></div>
+                </a>
+                <a id="signup-btn" class="anchor-btn" href="#"> <span><i class="fa-regular fa-user"></i></span>Log
+                    In</a>
+
+            </div>
+        </div>
+    </header>
+    <div id="invisible-overlay-id" class="invisible-overlay"></div>
+
+
+    <!-- --------------------------SIGN UP FORM HTML -------------------  -->
+
+    <div class="signupFormCont section-padding container flex items-center justify-center">
+
+        <div class="signupForm">
+            <div class="signup-heading">
+                <h1> SignUp page</h1>
+            </div>
+            <div class="signup-body">
+                <form id="myForms" action="" class="flex flex-col">
+                    <div class="completeName flex">
+                        
+                        <input type="text" name="FirstName" id="FirstName" placeholder="Enter your first name" required>
+                        
+                        <input type="text" name="LastName" id="LastName" placeholder="Enter your last name" required>
+
+                    </div>
+                    <div class="signupMail flex">
+                        <input type="email" name="signEmail" id="signEmail" placeholder="Enter your email " required>
+                        <input type="number" name="signupNumber" id="signupnNumber" placeholder="Enter your number" required>
+                    </div>
+                    <div class="Profession flex">
+                        <select name="Profession" id="Profession" required>
+                            <option value="Seller">Seller</option>
+                            <option value="Receiver">Receiver</option>
+                            <option value="Broker">Broker</option>
+                        </select>
+                        <input type="text" name="completeAdr" id="completeAdr" placeholder="Enter your address" required>
+                    </div>
+                    <div class="zipcodesec flex">
+                        <select name="stateName" id="stateName" required>
+                            <option value="AP">Andhra Pradesh</option>
+                            <option value="AR">Arunachal Pradesh</option>
+                            <option value="AS">Assam</option>
+                            <option value="BR">Bihar</option>
+                            <option value="CT">Chhattisgarh</option>
+                            <option value="GA">Gujarat</option>
+                            <option value="HR">Haryana</option>
+                            <option value="HP">Himachal Pradesh</option>
+                            <option value="JK">Jammu and Kashmir</option>
+                            <option value="GA">Goa</option>
+                            <option value="JH">Jharkhand</option>
+                            <option value="KA">Karnataka</option>
+                            <option value="KL">Kerala</option>
+                            <option value="MP">Madhya Pradesh</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="MN">Manipur</option>
+                            <option value="ML">Meghalaya</option>
+                            <option value="MZ">Mizoram</option>
+                            <option value="NL">Nagaland</option>
+                            <option value="OR">Odisha</option>
+                            <option value="PB">Punjab</option>
+                            <option value="RJ">Rajasthan</option>
+                            <option value="SK">Sikkim</option>
+                            <option value="TN">Tamil Nadu</option>
+                            <option value="TG">Telangana</option>
+                            <option value="TR">Tripura</option>
+                            <option value="UT">Uttarakhand</option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="WB">West Bengal</option>
+                            <option value="AN">Andaman and Nicobar Islands</option>
+                            <option value="CH">Chandigarh</option>
+                            <option value="DN">Dadra and Nagar Haveli</option>
+                            <option value="DD">Daman and Diu</option>
+                            <option value="DL">Delhi</option>
+                            <option value="LD">Lakshadweep</option>
+                            <option value="PY">Puducherry</option>
+                        </select>
+                        <input type="number" name="zipcode" id="zipcode" placeholder="Enter your zipcode" required>
+                    </div>
+                    <div class="signIn-Submit">
+                        <button id="submitBtns" disabled type="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------- SIGN UP FORM HTML END ------------------- -->
+
+    <footer>
+        <div class="container footer-top grid template-column ">
+            <div class="footer-box">
+                <div class="logo-section">
+                    <a href="/"><img src="/media/light-logo.png" alt="built-cart-logo"></a>
+
+                </div>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quae explicabo vitae error
+                    architecto recusandae fugiat esse? Commodi ducimus sunt maiores iusto non nulla libero labore esse
+                    ex?</p>
+            </div>
+            <div class="footer-box">
+                <h4 class="footer-h4">Solutions</h4>
+                <span class="divider  items-center"></span>
+                <ul class="flex flex-col list-gap ">
+                    <li><a class="text-white" href="#">Trade and Professional</a></li>
+                    <li><a class="text-white" href="#">Self Builders</a></li>
+                    <li><a class="text-white" href="#">DIY and Home</a></li>
+                    <li><a class="text-white" href="#">Trade Account</a> </li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4 class="footer-h4">About</h4>
+                <span class="divider  items-center"></span>
+                <ul class="flex flex-col list-gap ">
+                    <li><a class="text-white" href="#">Companies</a></li>
+                    <li><a class="text-white" href="#">Projects</a></li>
+                    <li><a class="text-white" href="#">Products</a></li>
+                    <li><a class="text-white" href="#">Events</a> </li>
+                    <li><a class="text-white" href="#">Contact</a> </li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h4 class="footer-h4">Stay Informed</h4>
+                <span class="divider  items-center"></span>
+                <p class="para footer-signup-para">Sign-up to receive updates on when we’ll be available in your area!
+                </p>
+                <div class="footer-social-section flex items-center">
+                    <span><a class="text-white" href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
+                    <span><a class="text-white" href="#"><i class="fa-brands fa-linkedin-in"></i></a></span>
+                    <span><a class="text-white" href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                    <span><a class="text-white" href="#"><i class="fa-brands fa-youtube"></i></a></span>
+                </div>
+                <div class="footer-contact-section flex flex-col">
+                    <div class="text-white flex items-center "><span><i class="fa-solid fa-phone"></i></span> <a
+                            href="tel:+123456789"> +1234567890</a>
+                    </div>
+                    <div class="text-white flex items-center"><span><i class="fa-regular fa-envelope"></i></span>
+                        <a href="mailto:test@gmail.com"> test@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-end flex ">
+            <div class="footer-end-left">
+                <p class="para">&copy;Copyright 2024 | <a style="text-decoration: underline;" href="/">BiltCart.com</a>
+                </p>
+            </div>
+            <div class="footer-end-right flex ">
+                <a href="#">Terms and Condition</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="signup.js"></script>
+    <!-- <script src="index.js"></script> -->
+</body>
+
+</html>
